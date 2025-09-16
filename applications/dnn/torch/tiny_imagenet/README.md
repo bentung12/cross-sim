@@ -96,7 +96,7 @@ Experiments are performed on **Tiny ImageNet** using a **ResNet-32 backbone** (w
   python full_network_alpha.py --model_path alpha_loop_models/model.pth --use_alpha True
   ```
 
-### Extract Model Weights
+### Extract Model Weights for Deployment onto SONOS board
 
 ```bash
 python model_weights.py --model_path alpha_loop_models/model.pth --output weights.pth
@@ -106,11 +106,7 @@ python model_weights.py --model_path alpha_loop_models/model.pth --output weight
 
 ## 📊 Results
 
-Trained models are stored in:
-
-* `base_models/`
-* `noise_models/`
-* `alpha_loop_models/`
+Trained models available upon request (tbenjam4@asu.edu)
 
 Comparison of accuracy, robustness, and error patterns across training modes shows that **alpha-in-the-loop consistently yields the best performance under radiation noise**.
 
@@ -118,15 +114,4 @@ Comparison of accuracy, robustness, and error patterns across training modes sho
 
 ## 👥 Contributors
 
-* [Your Name](https://github.com/yourusername)
-* [Partner’s Name](https://github.com/partnerusername) – contributions on dataset preparation, training scripts, and evaluation.
-
----
-
-## 📜 License
-
-Choose and add a license (e.g., MIT, Apache 2.0).
-
----
-
-Do you want me to also **add one or two figures from your PowerPoint (like the drift correction graph or summary TID results)** into the README as embedded images, so it visually shows the problem and solution?
+* [Benjamin Tung](https://github.com/bentung12)
