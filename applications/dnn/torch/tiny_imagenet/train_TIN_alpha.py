@@ -306,7 +306,7 @@ def train_model(model, dataloaders, criterion, optimizer, reducer, scheduler,
 
 
 if __name__ == "__main__":
-    for i in range(3,20): #Runs the training 20 times
+    for i in range(0,20): #Runs the training 20 times
         # Detect if we have a GPU available
         device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
         
