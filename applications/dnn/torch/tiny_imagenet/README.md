@@ -45,7 +45,7 @@ Experiments are performed on **Tiny ImageNet** using a **ResNet-32 backbone** (w
 ## ⚙️ Setup
 
 1. Download the PyTorch branch of this repository
-2. Refer to the repository ![home page](../../../../README.md) for necessary packages.
+2. Refer to the repository ![home page](../../../../readme.md) for necessary packages.
 3. Place the Tiny ImageNet dataset in "applications/dnn/data"
 4. Process the Tiny ImageNet dataset
 
