@@ -29,24 +29,9 @@ This particular folder only contains data for the single layer alpha correction 
 
 ## ⚙️ Setup
 
-### Requirements
-
-* Python 3.9+
-* PyTorch
-* NumPy
-* Matplotlib
-* [CrossSim (pytorch branch)](https://github.com/sandialabs/cross-sim/tree/pytorch)&#x20;
-
 ### Installation
 
-1. Clone this repository and install dependencies:
-
-   ```bash
-   git clone <your-repo-link>
-   cd <your-repo>
-   pip install -r requirements.txt
-   ```
-2. Download and set up **CrossSim** (see link above).
+1. Download and set up **CrossSim** with the listed dependencies ![here](https://github.com/sandialabs/cross-sim/tree/pytorch).
 
 ---
 
