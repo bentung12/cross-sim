@@ -6,7 +6,7 @@ import pickle
 import array 
 import sys
 
-path = "/home/tbenjam4/Desktop/Cross Sim Research/cross-sim-pytorch/applications/dnn/data/datasets/tiny-imagenet-200/train/"
+path = ".../.../.../data/datasets/tiny-imagenet-200/train/"
 files = folders = 0
 folder_names = []
 dirlist = [item for item in os.listdir(path) if os.path.isdir(os.path.join(path,item))]
@@ -291,3 +291,4 @@ np.save(x_test_file_path,x_test)
 #     pickle.dump(str(y_train ), file)
 # with open('x_train.pkl', 'wb') as file:
 #     pickle.dump(str(y_train), file)
+
