@@ -18,6 +18,8 @@ from .custom.PCM_Joshi import PCMJoshi
 from .custom.RRAM_Milo import RRAMMilo
 from .custom.RRAM_Wan import RRAMWan
 from .custom.SONOS import SONOS
+from .custom.SONOS_TID_202312 import SONOS_TID_202312
+from. custom.SONOS_TID import SONOS_TID
 
 from simulator.circuits import array_simulator
 from typing import Any
@@ -138,3 +140,4 @@ class Device(IDevice):
         device._drift_error_model.drift_error(xp.zeros(1), 0)
 
         return device
+
