@@ -35,7 +35,7 @@ Experiments are performed on **Tiny ImageNet** using a **ResNet-32 backbone** (w
 * **`full_network_alpha.py`** – Inference with alpha correction (can also replicate baseline inference if `use_alpha=False`).
 * **`model_weights.py`** – Extracts and saves the penultimate linear layer of a model (layer used on physical SONOS board).
 * **`TID_data_0802_CrossSim.p` / `TID_params_202312.p`** – SONOS experiment data used in simulations.
-* 
+
 ### Folders
 
 * **`TIN_dataset/`** – Python code that processes Tiny Imagenet data.
@@ -44,23 +44,14 @@ Experiments are performed on **Tiny ImageNet** using a **ResNet-32 backbone** (w
 
 ## ⚙️ Setup
 
-1. Clone this repository:
+1. Download the PyTorch branch of this repository
+2. Refer to the repository ![home page](../../../../README.md) for necessary packages.
+3. Place the Tiny ImageNet dataset in "applications/dnn/data"
+4. Process the Tiny ImageNet dataset
 
-   ```bash
-   git clone https://github.com/yourusername/tinyimagenet-crosssim.git
-   cd tinyimagenet-crosssim
-   ```
-
-2. Install dependencies (Python 3.9+ recommended):
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-   *(If you don’t have a `requirements.txt` yet, you can generate one with `pip freeze > requirements.txt`.)*
-
-3. Prepare the Tiny ImageNet dataset and place it inside the `TIN_dataset/` directory.
-
+ ```bash
+  python TIN_dataset/TIN_DataSet_Parser.py
+  ```
 ---
 
 ## 🚀 Usage
