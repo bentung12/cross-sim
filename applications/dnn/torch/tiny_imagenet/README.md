@@ -44,10 +44,10 @@ Experiments are performed on **Tiny ImageNet** using a **ResNet-32 backbone** (w
 
 ## ⚙️ Setup
 
-1. Download the PyTorch branch of this repository
+1. Download the PyTorch branch of this repository.
 2. Refer to the repository ![home page](../../../../readme.md) for necessary packages.
-3. Place the Tiny ImageNet dataset in "applications/dnn/data"
-4. Process the Tiny ImageNet dataset
+3. Download the Tiny ImageNet dataset to "applications/dnn/data".
+4. Process the Tiny ImageNet dataset.
 
  ```bash
   python TIN_dataset/TIN_DataSet_Parser.py
@@ -79,12 +79,12 @@ Experiments are performed on **Tiny ImageNet** using a **ResNet-32 backbone** (w
 * Standard:
 
   ```bash
-  python inference_tiny_imagenet.py --model_path base_models/model.pth
+  python inference_tiny_imagenet.py --model_path model.pth
   ```
 * With alpha correction:
 
   ```bash
-  python full_network_alpha.py --model_path alpha_loop_models/model.pth --use_alpha True
+  python full_network_alpha.py --model_path model.pth --use_alpha True
   ```
 
 ### Extract Model Weights for Deployment onto SONOS board
@@ -97,12 +97,26 @@ python model_weights.py --model_path alpha_loop_models/model.pth --output weight
 
 ## 📊 Results
 
+![TID_Accuracy](supporting_docs/TID_Accuracy.png)
+
+| Training Type           | Inference Trials | 0 TID Accuracy | Peak Accuracy   | Loses 5% Accuracy (TID) | Reaches 49.335% Accuracy (TID) |
+|-------------------------|------------------|----------------|-----------------|--------------------------|--------------------------------|
+| Base                    | 10               | 54.335         | 54.335 (0k)     | 4.174k                   | 4.174k                         |
+| 4k (Alternating)        | 3                | 54.64          | 54.64 (0k)      | 9.684k                   | 9.944k                         |
+| 4e3 Alpha Noise         | 3                | 53.68          | 53.7 (3k)       | 33.95k                   | 31.23k                         |
+| 10k Alpha in the Loop   | 10               | 55.2           | 55.2 (4k)       | 57.3k                    | 70.3k                          |
+
 Trained models available upon request (tbenjam4@asu.edu)
 
 Comparison of accuracy, robustness, and error patterns across training modes shows that **alpha-in-the-loop consistently yields the best performance under radiation noise**.
+
+Refer ![here](supporting_docs/Reducing_Image_Recognition_Accuracy_Loss_from_Radiation_in_Analog_Memristive_Chips.pdf) for more data/background information.
 
 ---
 
 ## 👥 Contributors
 
 * [Benjamin Tung](https://github.com/bentung12)
+* Patrick Xiao and Matthew Marinella for mentorship
+* Maximillian Siath for gathering SONOS TID data
+* Justin Weidmann, Zachary White, Wataru Tamaki, Hoyeol Bae for SONOS experimental testing
