@@ -17,10 +17,10 @@ endpathconstant_val = '/images/'
 num_classes = 200
 N_train_total = 100000
 N_val = 10000
-train_dir = "/home/tbenjam4/Desktop/Cross Sim Research/cross-sim-pytorch/applications/dnn/data/datasets/tiny-imagenet-200/train/"
-val_dir = "/home/tbenjam4/Desktop/Cross Sim Research/cross-sim-pytorch/applications/dnn/data/datasets/tiny-imagenet-200/val/"
-test_dir = "/home/tbenjam4/Desktop/Cross Sim Research/cross-sim-pytorch/applications/dnn/data/datasets/tiny-imagenet-200/test/"
-train_dir_orig = "/home/tbenjam4/Desktop/Cross Sim Research/cross-sim-pytorch/applications/dnn/data/datasets/tiny-imagenet-200/train/"
+train_dir = ".../.../.../data/datasets/tiny-imagenet-200/train/"
+val_dir = ".../.../.../data/datasets/tiny-imagenet-200/val/"
+test_dir = ".../.../.../dnn/data/datasets/tiny-imagenet-200/test/"
+train_dir_orig = ".../.../.../data/datasets/tiny-imagenet-200/train/"
 
 
 
@@ -291,4 +291,5 @@ np.save(x_test_file_path,x_test)
 #     pickle.dump(str(y_train ), file)
 # with open('x_train.pkl', 'wb') as file:
 #     pickle.dump(str(y_train), file)
+
 
