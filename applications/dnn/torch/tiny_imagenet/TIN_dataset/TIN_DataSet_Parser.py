@@ -6,7 +6,7 @@ import pickle
 import array 
 import sys
 
-path = ".../.../.../data/datasets/tiny-imagenet-200/train/"
+path = "../../../data/datasets/tiny-imagenet-200/train/"
 files = folders = 0
 folder_names = []
 dirlist = [item for item in os.listdir(path) if os.path.isdir(os.path.join(path,item))]
@@ -17,10 +17,10 @@ endpathconstant_val = '/images/'
 num_classes = 200
 N_train_total = 100000
 N_val = 10000
-train_dir = ".../.../.../data/datasets/tiny-imagenet-200/train/"
-val_dir = ".../.../.../data/datasets/tiny-imagenet-200/val/"
-test_dir = ".../.../.../dnn/data/datasets/tiny-imagenet-200/test/"
-train_dir_orig = ".../.../.../data/datasets/tiny-imagenet-200/train/"
+train_dir = "../../../data/datasets/tiny-imagenet-200/train/"
+val_dir = "../../../data/datasets/tiny-imagenet-200/val/"
+test_dir = "../../../dnn/data/datasets/tiny-imagenet-200/test/"
+train_dir_orig = "../../../data/datasets/tiny-imagenet-200/train/"
 
 
 
@@ -291,5 +291,6 @@ np.save(x_test_file_path,x_test)
 #     pickle.dump(str(y_train ), file)
 # with open('x_train.pkl', 'wb') as file:
 #     pickle.dump(str(y_train), file)
+
 
 
